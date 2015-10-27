@@ -1,5 +1,9 @@
-var client = require('twilio')('AC0ea4a2d8868b3567000462d17a699609', "{{48ab36809c698d002c0eb0b5299703bc}}");
-//var clockwork = require('clockwork')({key:'25e6715346df82ee42b3d852f284db14e38ea633'});
+// Twilio Credentials 
+var accountSid = 'AC133e0fda804f8fcbf9a12c54a18ea4ba'; 
+var authToken = '36d47cf8ba271f9eb1cdbbc6dc4946ee'; 
+ 
+//require the Twilio module and create a REST client 
+var client = require('twilio')(accountSid, authToken); 
 var express = require('express');
 var forms = require('forms');
 var extend = require('xtend');
@@ -14,9 +18,9 @@ module.exports = function messagePublish(){
 	messagePublishForm.handle(req,{
 		success: function(form){
 			client.sendMessage({
-				to: '+919916054275', // Any number Twilio can deliver to
-				from: '+15005550006', // A number you bought from Twilio and can use for outbound communication
-				body: 'word to your mother.' // body of the SMS message
+				to: '+919686381336', // Any number Twilio can deliver to
+				from: '+12562033201', // A number you bought from Twilio and can use for outbound communication
+				body: 'twillo is the message is the' // body of the SMS message
 			}, function(err, responseData) { //this function is executed when a response is received from Twilio
 				if (!err) { // "err" is an error received during the request, if any
 					// "responseData" is a JavaScript object containing data received from Twilio.

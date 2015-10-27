@@ -21,6 +21,7 @@
     "jade": "^1.11.0",
     "passport": "^0.2.2",
     "passport-google": "^0.3.0",
+    "twilio": "^2.5.1",
     "xtend": "^4.0.0"
   }
 }
