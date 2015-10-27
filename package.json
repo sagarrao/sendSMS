@@ -1,0 +1,26 @@
+{
+  "name": "node-firebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "bootstrap": "^3.3.5",
+    "client-sessions": "^0.7.0",
+    "csurf": "^1.8.3",
+    "express": "^4.13.3",
+    "express-stormpath": "^1.0.5",
+    "firebase": "^2.2.7",
+    "forms": "^1.1.1",
+    "jade": "^1.11.0",
+    "passport": "^0.2.2",
+    "passport-google": "^0.3.0",
+    "xtend": "^4.0.0"
+  }
+}

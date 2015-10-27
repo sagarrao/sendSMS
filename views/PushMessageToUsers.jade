@@ -1,0 +1,19 @@
+block content
+    div.container
+      div.jumbotron
+        h2 Publish Message To All Users
+          form.login-form.form-horizontal(method='post', role='form',action='/pushMessage')
+           div.form-group.row
+           label.col-sm-2 Message
+           div.form-group.row
+           div.col-sm-4
+            #textarea(name:'message', rows:20, id:'message' ) Default text
+            input.form-control(placeholder='Password',
+              required=true,
+              name='message',
+              type='text',
+              value=message)
+            div.form-group.row
+            div.form-group
+            div.col-sm-offset-2.col-sm-8
+              button.login.btn.btn-primary(type='submit') Publish
